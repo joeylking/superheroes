@@ -7,6 +7,11 @@
     <title>Superhero Index</title>
   </head>
   <body>
+    {% load static %}
+    <img
+      src="{% static 'superhero_project/Supermanflying.png' %}"
+      alt="Superman flying"
+    />
     <h1>List of Heroes:</h1>
     <ul>
       {% for hero in all_heroes %}
